@@ -50,5 +50,6 @@ p{
 }
 
 div{
-    max-width:1440px;
+    max-width:80%;
+    margin:auto;
 }
