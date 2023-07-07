@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url("books.jpg");
     background-size: cover;
@@ -6,35 +12,45 @@ body {
     text-align: center;
 }
 
-h1 {
-    background-color:#faedcd;
-    color:black;
-    margin: 10px 130px 10px 130px;
-    border-radius:50%;
-    padding:10px
+section {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-h2 {
-    font-size: 50px;
-    margin: 0 150PX 20px 150PX;
+.title {
+    background-color: #faedcd;
+    color: black;
+    font-size: 2rem;
+    padding: 1.5em;
+    /* margin: 10px 130px 10px 130px; */
+    border-radius: 50%;
+
+}
+
+#count-el {
     background-color: #d4a373;
-    border-radius:50%
+    font-size: 3.125rem;
+    padding: .5em 1em;
+    /* margin: 0 150PX 20px 150PX; */
+    border-radius: 50%;
+    margin: 0 auto;
 }
 
 button {
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
     font-weight: bold;
-    width: 200px;
-    margin-bottom: 5px;
+    /* width: 200px; */
+    padding: 1em 2em;
+    margin: .5em auto;
     border-radius: 5px;
-    
 }
 
 #increment-btn {
     background: #e9edc9;
-    border:5px solid #ccd5ae;
+    border: 5px solid #ccd5ae;
 }
 
 #save-btn {
@@ -42,14 +58,30 @@ button {
     border: 5px solid #e9edc9
 }
 
-p{
-    background:#fefae0;
-    margin: 5px 175px 0 175px;
-    padding: 8px;
-    border-radius:5px;
+#save-el {
+    background: #fefae0;
+    /* margin: 5px 175px 0 175px; */
+    padding: .75em;
+    border-radius: 5px;
 }
 
-div{
-    max-width:80%;
-    margin:auto;
+
+
+footer {
+    background: #fefae0;
+    font-size: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+}
+
+footer p {
+    margin: 0;
+    border-radius: 0;
+}
+
+footer a {
+    color: black;
 }
